@@ -3,5 +3,6 @@ from .views import *
 
 urlpatterns = [
     path('', openai_chat, name='openai_chat'),
-    path('hello', print_hello)
+    path('hello/', print_hello, name='health_check')
+
 ]
